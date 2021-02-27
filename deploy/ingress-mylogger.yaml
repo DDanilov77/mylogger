@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-mylogger
+  namespace: kubewatch
+spec:
+  rules:
+    - host: mylogger.example.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: mylogger
+              servicePort: 80
