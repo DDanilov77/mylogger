@@ -1,2 +1,4 @@
 # mylogger
-my sample logger on golang 
+My sample logger on golang<br>
+version: $version<br>
+<hr>
